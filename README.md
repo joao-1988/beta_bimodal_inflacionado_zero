@@ -30,7 +30,8 @@ $$Var[Y] = \left(\frac{\mu_1(1-\mu_1)}{\phi_1+1}+\mu_1^2\right)\pi(1-\alpha)+\le
 em que $\mu=E[Y]$.
 
 Sejam $Y_1,...,Y_n$ variáveis aleatórias independentes, em que cada $Y_i$, $i=1,2,...,n$, possui função densidade de probabilidade beta bimodal inflacionada em zero da forma \eqref{dens_beta_bimodal_zero}, com parâmetros $\alpha_i,\pi_i,\mu_{1i},\phi_{1i},\mu_{2i}$ $\phi_{2i}$, respectivamente. Os modelos de regressão beta bimodal inflacionados em zero (RBBZ) são definidos pelos seguintes componentes sistemáticos:
-$$g_{0}({\alpha}) = {\eta}_{0} = X_{0} {\beta}_{0},$$
+
+$$g_0(\alpha) = \eta_{0} = X_{0} \beta_{0},$$
 $$g_{1}({\mu}_{1}) = {\eta}_{1} = X_{1} {\beta}_{1},$$
 
 $$g_{2}({\mu}_{2}) = {\eta}_{2} = X_{2} {\beta}_{2},$$
