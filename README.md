@@ -39,6 +39,6 @@ $$g_{2}(\mu_{2}) = \eta_{2} = X_{2} \beta_{2},$$
 
 $$g_{3}(\pi) = \eta_{3} = X_{3} \beta_{3},$$
 
-em que ${\alpha},{\mu}_1,{\mu}_2,{\pi}$ e ${\eta}_{k}$, $k=0,1,2$ e $3$, são vetores de tamanho $n$, ${\beta}_{k}^{T}=(\beta_{k1},\beta_{k2},...,\beta_{kd_{k}})$ é um vetor de tamanho $d_k$, $X_{k}$ é uma matriz de valores conhecidos da ordem $n \times d_{k}$. As funções $g_{k}(\cdot)$, são denominadas funções de ligação, relacionam os vetores de parâmetros ${\alpha},{\mu}_1,{\mu}_2$ e ${\pi}$ às variáveis explanatórias em $X_{0},X_{1},X_{2}$ e $X_{3}$, respectivamente. As funções de ligação são conhecidas e devem ser estritamente monótonas e $g_{k}(\cdot):(0,1) \longrightarrow \mathbb{R}$. 
+em que $\alpha, \mu_1, \mu_2, \pi$ e $\eta_{k}$, $k=0,1,2$ e $3$, são vetores de tamanho $n$, $\beta_{k}^{T}=(\beta_{k1},\beta_{k2},...,\beta_{kd_{k}})$ é um vetor de tamanho $d_k$, $X_{k}$ é uma matriz de valores conhecidos da ordem $n \times d_{k}$. As funções $g_{k}(\cdot)$, são denominadas funções de ligação, relacionam os vetores de parâmetros $\alpha, \mu_1, \mu_2$ e $\pi$ às variáveis explanatórias em $X_{0},X_{1},X_{2}$ e $X_{3}$, respectivamente. As funções de ligação são conhecidas e devem ser estritamente monótonas e $g_{k}(\cdot):(0,1) \longrightarrow \mathbb{R}$. 
 
 O ajuste do modelo RBBZ é realizado pela estimação de máxima verossimilhança. 
