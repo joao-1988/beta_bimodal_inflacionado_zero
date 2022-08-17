@@ -10,44 +10,32 @@ Neste sentido, propomos um modelo de regressão em que as variáveis respostas p
 
 Considere, inicialmente, uma variável aleatória $W$ proveniente de uma mistura de duas distribuições beta, a distribuição desta variável aleatória possui função densidade de probabilidade da forma
 
-$$
-bb(w;\pi,\mu_1,\phi_1,\mu_2,\phi_2)= \pi f(w;\mu_1,\phi_1) + (1-\pi)f(w;\mu_2,\phi_2)
-$$
+$$bb(w;\pi,\mu_1,\phi_1,\mu_2,\phi_2)= \pi f(w;\mu_1,\phi_1) + (1-\pi)f(w;\mu_2,\phi_2)$$
 
 em que $0<w,\pi<1$, $f(w;\mu_1,\phi_1)$\footnote{Parametrização alternativa da distribuição beta em
 termos da média $\mu_1$, e parâmetro de precisão $\phi_1$.} e $f(w;\mu_2,\phi_2)$ (densidades componentes) são funções densidade de probabilidade da distribuição beta referentes às duas subpopulações misturadas aleatoriamente com proporções $\pi$ e $(1-\pi)$, respectivamente, estes são chamados pesos das componentes. Assim dizemos que $W$ segue distribuição beta bimodal com parâmetros $\pi,\mu_1,\phi_1,\mu_2$ e $\phi_2$.
 
 Neste momento, considere $Y$ uma variável aleatória, que assume valores no intervalo $[0,1)$, originária da mistura de uma distribuição degenerada em zero e uma distribuição beta bimodal \eqref{dens_beta_bimodal}, desta forma sua função densidade de probabilidade é dada por
 
-$$
-bbz(y;\alpha,\pi,\mu_1,\phi_1,\mu_2,\phi_2) = 
-\alpha I(y=0) + (1-\alpha)bb(y;\pi,\mu_1,\phi_1,\mu_2,\phi_2) I(y \in (0,1)) 
-$$
+$$bbz(y;\alpha,\pi,\mu_1,\phi_1,\mu_2,\phi_2) = 
+\alpha I(y=0) + (1-\alpha)bb(y;\pi,\mu_1,\phi_1,\mu_2,\phi_2) I(y \in (0,1))$$
 
 com $\alpha,\pi,\mu_1, \mu_2 \in (0,1)$ e $\phi_1,\phi_2 > 0$. A função $bb(y;\pi,\mu_1,\phi_1,\mu_2)$ refere-se a densidade beta bimodal \eqref{dens_beta_bimodal}. Observe que $\alpha=P(Y=0)$, configura a probabilidade de se observar o valor zero, e com probabilidade $(1-\alpha)$ a variável aleatória tem origem beta bimodal. Então $Y \sim BBZ(\alpha,\pi,\mu_1,\phi_1,\mu_2$ e $\phi_2)$, isto é, $Y$ é uma variável aleatória com distribuição beta bimodal inflacionada em zero (BBZ) com parâmetros $\alpha,\pi,\mu_1,\phi_1,\mu_2$ e $\phi_2$. 
 
 
 A esperança e a variância de $Y \sim BBZ(\alpha,\pi,\mu_1,\phi_1,\mu_2$ e $\phi_2)$ são dadas, respectivamente, por 
 $$E[Y] = \mu_{1} \pi(1-\alpha) + \mu_{2} (1-\pi) (1-\alpha),$$
-$$ Var[Y] = \left(\frac{\mu_1(1-\mu_1)}{\phi_1+1}+\mu_1^2\right)\pi(1-\alpha)+\left(\frac{\mu_2(1-\mu_2)}{\phi_2+1} +\mu_2^2\right)(1-\pi) (1-\alpha)-\mu^2, $$
+$$Var[Y] = \left(\frac{\mu_1(1-\mu_1)}{\phi_1+1}+\mu_1^2\right)\pi(1-\alpha)+\left(\frac{\mu_2(1-\mu_2)}{\phi_2+1} +\mu_2^2\right)(1-\pi) (1-\alpha)-\mu^2,$$
 
 em que $\mu=E[Y]$.
 
 Sejam $Y_1,...,Y_n$ variáveis aleatórias independentes, em que cada $Y_i$, $i=1,2,...,n$, possui função densidade de probabilidade beta bimodal inflacionada em zero da forma \eqref{dens_beta_bimodal_zero}, com parâmetros $\alpha_i,\pi_i,\mu_{1i},\phi_{1i},\mu_{2i}$ $\phi_{2i}$, respectivamente. Os modelos de regressão beta bimodal inflacionados em zero (RBBZ) são definidos pelos seguintes componentes sistemáticos:
-$$
-g_{0}({\alpha}) = {\eta}_{0} = X_{0} {\beta}_{0}, 
-$$
-$$
-g_{1}({\mu}_{1}) = {\eta}_{1} = X_{1} {\beta}_{1}, 
-$$
+$$g_{0}({\alpha}) = {\eta}_{0} = X_{0} {\beta}_{0},$$
+$$g_{1}({\mu}_{1}) = {\eta}_{1} = X_{1} {\beta}_{1},$$
 
-$$
-g_{2}({\mu}_{2}) = {\eta}_{2} = X_{2} {\beta}_{2},
-$$
+$$g_{2}({\mu}_{2}) = {\eta}_{2} = X_{2} {\beta}_{2},$$
 
-$$
-g_{3}({\pi}) = {\eta}_{3} = X_{3} {\beta}_{3}, 
-$$
+$$g_{3}({\pi}) = {\eta}_{3} = X_{3} {\beta}_{3},$$
 
 em que ${\alpha},{\mu}_1,{\mu}_2,{\pi}$ e ${\eta}_{k}$, $k=0,1,2$ e $3$, são vetores de tamanho $n$, ${\beta}_{k}^{T}=(\beta_{k1},\beta_{k2},...,\beta_{kd_{k}})$ é um vetor de tamanho $d_k$, $X_{k}$ é uma matriz de valores conhecidos da ordem $n \times d_{k}$. As funções $g_{k}(\cdot)$, são denominadas funções de ligação, relacionam os vetores de parâmetros ${\alpha},{\mu}_1,{\mu}_2$ e ${\pi}$ às variáveis explanatórias em $X_{0},X_{1},X_{2}$ e $X_{3}$, respectivamente. As funções de ligação são conhecidas e devem ser estritamente monótonas e $g_{k}(\cdot):(0,1) \longrightarrow \mathbb{R}$. 
 
