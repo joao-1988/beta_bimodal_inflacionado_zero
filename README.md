@@ -31,12 +31,13 @@ em que $\mu=E[Y]$.
 
 Sejam $Y_1,...,Y_n$ variáveis aleatórias independentes, em que cada $Y_i$, $i=1,2,...,n$, possui função densidade de probabilidade beta bimodal inflacionada em zero da forma \eqref{dens_beta_bimodal_zero}, com parâmetros $\alpha_i,\pi_i,\mu_{1i},\phi_{1i},\mu_{2i}$ $\phi_{2i}$, respectivamente. Os modelos de regressão beta bimodal inflacionados em zero (RBBZ) são definidos pelos seguintes componentes sistemáticos:
 
-$$g_0(\alpha) = \eta_{0} = X_{0} \beta_{0},$$
-$$g_{1}({\mu}_{1}) = {\eta}_{1} = X_{1} {\beta}_{1},$$
+$$g_{0}(\alpha) = \eta_{0} = X_{0} \beta_{0},$$
 
-$$g_{2}({\mu}_{2}) = {\eta}_{2} = X_{2} {\beta}_{2},$$
+$$g_{1}(\mu_{1}) = \eta_{1} = X_{1} \beta_{1},$$
 
-$$g_{3}({\pi}) = {\eta}_{3} = X_{3} {\beta}_{3},$$
+$$g_{2}(\mu_{2}) = \eta_{2} = X_{2} \beta_{2},$$
+
+$$g_{3}(\pi) = \eta_{3} = X_{3} \beta_{3},$$
 
 em que ${\alpha},{\mu}_1,{\mu}_2,{\pi}$ e ${\eta}_{k}$, $k=0,1,2$ e $3$, são vetores de tamanho $n$, ${\beta}_{k}^{T}=(\beta_{k1},\beta_{k2},...,\beta_{kd_{k}})$ é um vetor de tamanho $d_k$, $X_{k}$ é uma matriz de valores conhecidos da ordem $n \times d_{k}$. As funções $g_{k}(\cdot)$, são denominadas funções de ligação, relacionam os vetores de parâmetros ${\alpha},{\mu}_1,{\mu}_2$ e ${\pi}$ às variáveis explanatórias em $X_{0},X_{1},X_{2}$ e $X_{3}$, respectivamente. As funções de ligação são conhecidas e devem ser estritamente monótonas e $g_{k}(\cdot):(0,1) \longrightarrow \mathbb{R}$. 
 
