@@ -12,7 +12,7 @@ Considere, inicialmente, uma variável aleatória $W$ proveniente de uma mistura
 
 $$bb(w;\pi,\mu_1,\phi_1,\mu_2,\phi_2)= \pi f(w;\mu_1,\phi_1) + (1-\pi)f(w;\mu_2,\phi_2)$$
 
-em que $0 < w$,$\pi < 1$, $f(w;\mu_1,\phi_1)$ (Parametrização alternativa da distribuição beta em
+em que $0 le w$,$ \pi le 1$, $f(w;\mu_1,\phi_1)$ (Parametrização alternativa da distribuição beta em
 termos da média $\mu_1$, e parâmetro de precisão $\phi_1$) e $f(w;\mu_2,\phi_2)$ (densidades componentes) são funções densidade de probabilidade da distribuição beta referentes às duas subpopulações misturadas aleatoriamente com proporções $\pi$ e $(1-\pi)$, respectivamente, estes são chamados pesos das componentes. Assim dizemos que $W$ segue distribuição beta bimodal com parâmetros $\pi,\mu_1,\phi_1,\mu_2$ e $\phi_2$.
 
 Neste momento, considere $Y$ uma variável aleatória, que assume valores no intervalo $[0,1)$, originária da mistura de uma distribuição degenerada em zero e uma distribuição beta bimodal \eqref{dens_beta_bimodal}, desta forma sua função densidade de probabilidade é dada por
